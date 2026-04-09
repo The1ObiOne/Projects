@@ -4,6 +4,14 @@
     "self-improving-agent": {
       "version": "3.0.13",
       "installedAt": 1775708679797
+    },
+    "agent-browser-clawdbot": {
+      "version": "0.1.0",
+      "installedAt": 1775710926684
+    },
+    "x-api": {
+      "version": "0.1.0",
+      "installedAt": 1775712301105
     }
   }
 }
