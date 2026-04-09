@@ -14,6 +14,8 @@ _Fill this in during your first conversation. Make it yours._
   _(workspace-relative path, http(s) URL, or data URI)_
 - **Email:**
   The1ObiOne@outlook.com
+- **X/Twitter:**
+  @The1ObiOne
 
 ---
 
