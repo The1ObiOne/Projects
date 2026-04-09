@@ -5,6 +5,10 @@
 - [ ] Test the `x-api` skill with a safe draft post
 - [ ] Decide whether to keep using X via API, browser, or both
 - [ ] Verify `Start-Obi-One.bat` works end-to-end from Windows
+- [ ] Turn `NORTHORY-OFFERS.md` into a one-page client-facing offer sheet
+- [ ] Stand up the TopGiftsToday site skeleton
+- [ ] Publish the first TopGiftsToday article cluster
+- [ ] Build the first Northory prospect list
 
 ## Soon
 - [ ] Finish reliable browser-control setup for interactive sites
@@ -20,9 +24,10 @@
 - [ ] Build a safe posting workflow for social accounts
 
 ## Current focus
+- Northory side-income engine
+- TopGiftsToday affiliate launch
 - X account control and posting setup
 - Reliable backup and recovery
-- Better browser automation
 
 ## Notes
 - Workspace backups are working and pushed to GitHub.
