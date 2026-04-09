@@ -19,6 +19,22 @@ From WSL or Linux shell:
 cd /home/obione/.openclaw/workspace
 ./scripts/start-obi.sh
 ./scripts/backup-obi.sh
+./scripts/backup-openclaw-config.sh
+```
+
+## Restore global OpenClaw config
+
+If you need to restore your main OpenClaw config and paired credentials:
+
+```bash
+cd /home/obione/.openclaw/workspace
+./scripts/restore-openclaw-config.sh
+```
+
+To restore from a specific backup folder instead of the latest one:
+
+```bash
+./scripts/restore-openclaw-config.sh /home/obione/.openclaw/workspace/private-backups/openclaw/YYYY-MM-DD_HH-MM-SS
 ```
 
 ## If OpenClaw looks stuck
