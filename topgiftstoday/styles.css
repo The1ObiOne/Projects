@@ -193,6 +193,75 @@ h1 {
   font-weight: 700;
 }
 
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: var(--primary);
+}
+
+.article-main {
+  padding: 3rem 0;
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 0.8fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.article-content,
+.sidebar-card,
+.callout,
+.gift-item,
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.article-content {
+  padding: 1.5rem;
+}
+
+.article-intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.article-content section + section {
+  margin-top: 1.5rem;
+}
+
+.article-list {
+  padding-left: 1.2rem;
+}
+
+.gift-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.gift-item,
+.faq-item,
+.callout,
+.sidebar-card {
+  padding: 1rem 1.1rem;
+}
+
+.article-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.accent-card {
+  background: linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
+}
+
 .site-footer {
   padding: 2rem 0 3rem;
 }
@@ -216,6 +285,7 @@ h1 {
   .card-grid,
   .category-grid,
   .steps-grid,
+  .article-layout,
   .footer-grid {
     grid-template-columns: 1fr;
     display: grid;
