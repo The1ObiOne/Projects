@@ -4,16 +4,27 @@
 TopGiftsToday is a gift recommendation site for busy shoppers who want fast, trustworthy gift ideas.
 
 ## Starting niche
-Start with gift guides for:
+Start with a strong initial cluster, then expand outward.
+
+Phase 1 cluster:
 - men
 - dads
 - husbands
 - boyfriends
 
+Phase 2 expansion:
+- women
+- moms
+- wives
+- girlfriends
+- friends
+- coworkers
+
 Layer on:
 - birthdays
 - anniversaries
 - Father's Day
+- Mother's Day
 - Christmas
 - Valentine's Day
 - budgets like under $25, $50, and $100
@@ -39,9 +50,15 @@ Layer on:
 ## Site structure
 - Home
 - Gifts for Men
+- Gifts for Women
+- Gifts for Moms
 - Gifts for Dads
 - Gifts for Husbands
+- Gifts for Wives
 - Gifts for Boyfriends
+- Gifts for Girlfriends
+- Gifts for Friends
+- Gifts for Coworkers
 - Gifts by Budget
 - Gifts by Occasion
 - Holiday Gifts
@@ -87,6 +104,7 @@ Do not prioritize early:
 
 ## Success target for first 90 days
 - 30 articles live
-- 1 niche cluster showing impressions/clicks
+- 1 original cluster showing impressions/clicks
+- 1 expansion cluster underway beyond men-focused content
 - Pinterest workflow established
 - First affiliate clicks and early commissions
