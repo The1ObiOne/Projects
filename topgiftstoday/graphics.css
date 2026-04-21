@@ -1,0 +1,149 @@
+.hero-visual,
+.category-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 18px 45px rgba(67, 56, 202, 0.16);
+}
+
+.hero-visual {
+  min-height: 320px;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.92), transparent 26%),
+    radial-gradient(circle at 78% 22%, rgba(255, 255, 255, 0.62), transparent 22%),
+    linear-gradient(135deg, #fef3c7 0%, #fde68a 18%, #f9a8d4 46%, #c4b5fd 72%, #93c5fd 100%);
+}
+
+.hero-visual::before,
+.hero-visual::after,
+.category-banner::before,
+.category-banner::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+.hero-visual::before {
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.22);
+  top: -30px;
+  right: -20px;
+}
+
+.hero-visual::after {
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.3);
+  bottom: 20px;
+  left: -24px;
+}
+
+.hero-visual-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.gift-pillars {
+  display: grid;
+  gap: 0.9rem;
+  align-self: end;
+}
+
+.gift-tile {
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  backdrop-filter: blur(8px);
+}
+
+.gift-tile strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.gift-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-self: start;
+  justify-content: flex-end;
+}
+
+.gift-badge {
+  padding: 0.75rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  color: #312e81;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 10px 20px rgba(49, 46, 129, 0.08);
+}
+
+.category-banner {
+  margin-bottom: 1.25rem;
+  padding: 1.3rem 1.35rem;
+  color: white;
+}
+
+.category-banner::before {
+  width: 120px;
+  height: 120px;
+  top: -35px;
+  right: -20px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.category-banner::after {
+  width: 90px;
+  height: 90px;
+  bottom: -24px;
+  left: -18px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.category-banner h2,
+.category-banner p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.category-banner p {
+  margin-top: 0.4rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.banner-women {
+  background: linear-gradient(135deg, #f472b6 0%, #fb7185 35%, #f59e0b 100%);
+}
+
+.banner-moms {
+  background: linear-gradient(135deg, #fb7185 0%, #f9a8d4 48%, #c4b5fd 100%);
+}
+
+.banner-relationships {
+  background: linear-gradient(135deg, #a78bfa 0%, #f472b6 52%, #f97316 100%);
+}
+
+.banner-social {
+  background: linear-gradient(135deg, #22c55e 0%, #14b8a6 45%, #60a5fa 100%);
+}
+
+@media (max-width: 900px) {
+  .hero-visual-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .gift-badges {
+    justify-content: flex-start;
+  }
+}
