@@ -58,11 +58,22 @@
 }
 
 .gift-tile {
+  display: block;
   padding: 1rem;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(255, 255, 255, 0.66);
   backdrop-filter: blur(8px);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.gift-tile:hover,
+.gift-tile:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 30px rgba(49, 46, 129, 0.12);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .gift-tile strong {
@@ -79,6 +90,8 @@
 }
 
 .gift-badge {
+  display: inline-flex;
+  align-items: center;
   padding: 0.75rem 0.9rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.84);
@@ -86,6 +99,14 @@
   font-weight: 700;
   border: 1px solid rgba(255, 255, 255, 0.65);
   box-shadow: 0 10px 20px rgba(49, 46, 129, 0.08);
+  text-decoration: none;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.gift-badge:hover,
+.gift-badge:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .category-banner {
