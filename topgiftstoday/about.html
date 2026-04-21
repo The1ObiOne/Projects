@@ -9,15 +9,20 @@
       content="Learn what TopGiftsToday is, how we choose gift ideas, and how the site helps busy shoppers find better gifts faster."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="graphics.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="index.html">TopGiftsToday</a>
+        <a class="brand" href="index.html">
+          <img src="assets/logo-topgiftstoday.svg" alt="TopGiftsToday logo" />
+          <span class="brand-mark">TopGiftsToday<small>Gift ideas that feel easy to say yes to</small></span>
+        </a>
         <nav>
           <a href="index.html#featured">Featured Guides</a>
           <a href="index.html#categories">Categories</a>
           <a href="affiliate-disclosure.html">Disclosure</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
@@ -25,8 +30,11 @@
     <main class="article-main">
       <div class="container simple-page">
         <article class="article-content">
-          <p class="eyebrow">About</p>
-          <h1>TopGiftsToday helps busy shoppers find good gifts faster.</h1>
+          <div class="simple-hero">
+            <p class="eyebrow">About</p>
+            <h1>TopGiftsToday helps busy shoppers find good gifts faster.</h1>
+            <p>We focus on practical, giftable ideas across budgets, people, and occasions, with a brighter editorial look and cleaner navigation than most bloated gift list sites.</p>
+          </div>
           <p class="article-intro">
             TopGiftsToday is built for people who do not want to spend hours digging through random gift lists,
             low-quality product pages, or generic recommendations. The goal is simple: help you find gift ideas
@@ -47,6 +55,16 @@
           <section>
             <h2>Why this site exists</h2>
             <p>Most gift shopping content is bloated. TopGiftsToday exists to cut through that and make decisions easier. Fewer filler picks, clearer categories, broader coverage, and stronger recommendations.</p>
+          </section>
+
+          <section>
+            <h2>Popular places to start</h2>
+            <div class="link-cloud">
+              <a class="pill-link" href="articles/best-gifts-for-women-under-50.html">Gifts for Women Under $50</a>
+              <a class="pill-link" href="articles/best-birthday-gifts-for-moms.html">Birthday Gifts for Moms</a>
+              <a class="pill-link" href="articles/best-gifts-for-wives.html">Gifts for Wives</a>
+              <a class="pill-link" href="articles/best-gifts-for-men-under-50.html">Gifts for Men Under $50</a>
+            </div>
           </section>
         </article>
       </div>
