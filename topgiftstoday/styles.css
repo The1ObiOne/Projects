@@ -420,6 +420,88 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.finder-shell {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #eef2ff 100%);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.finder-heading {
+  max-width: 760px;
+}
+
+.finder-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.finder-step,
+.finder-result {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1rem 1.1rem;
+}
+
+.finder-step p,
+.finder-result p {
+  color: var(--muted);
+}
+
+.finder-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.9rem;
+}
+
+.finder-option {
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--primary-dark);
+  padding: 0.75rem 0.95rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.finder-option.is-selected,
+.finder-option:hover,
+.finder-option:focus-visible {
+  background: #4338ca;
+  color: white;
+  border-color: #4338ca;
+}
+
+.finder-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.finder-summary {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.finder-reset {
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .simple-hero p:last-child {
   margin-bottom: 0;
 }
@@ -473,7 +555,8 @@ h1 {
   .steps-grid,
   .article-layout,
   .footer-grid,
-  .product-grid {
+  .product-grid,
+  .finder-steps {
     grid-template-columns: 1fr;
     display: grid;
   }
