@@ -1,0 +1,25 @@
+<svg width="512" height="128" viewBox="0 0 512 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wordGrad" x1="78" y1="16" x2="432" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="0.45" stop-color="#EC4899"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="giftBox" x1="8" y1="12" x2="92" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FEF3C7"/>
+      <stop offset="0.55" stop-color="#FDBA74"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="22" width="88" height="80" rx="24" fill="url(#giftBox)"/>
+  <path d="M31 50C31 40.6112 38.6112 33 48 33H61C70.3888 33 78 40.6112 78 50V54H31V50Z" fill="white" fill-opacity="0.72"/>
+  <path d="M54 33V88" stroke="#7C2D12" stroke-width="5" stroke-linecap="round"/>
+  <path d="M31 61H78" stroke="#7C2D12" stroke-width="5" stroke-linecap="round"/>
+  <path d="M42 38C37 31 39 23.5 46 20.5C53 17.5 58.5 22 55 33" stroke="#BE185D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M67 38C72 31 70 23.5 63 20.5C56 17.5 50.5 22 54 33" stroke="#BE185D" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="87" cy="24" r="10" fill="#FDE68A" fill-opacity="0.9"/>
+  <circle cx="101" cy="39" r="6" fill="#DB2777" fill-opacity="0.75"/>
+  <text x="124" y="71" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">TopGifts</text>
+  <text x="342" y="71" fill="url(#wordGrad)" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">Today</text>
+  <text x="126" y="98" fill="#6B7280" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600">Gift ideas people actually want to click</text>
+</svg>
