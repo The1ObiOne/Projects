@@ -1,146 +1,209 @@
 const giftFinderData = {
-  person: {
+  people: {
     men: {
       label: "Men",
+      primary: "articles/best-gifts-for-men-under-50.html",
       budget: {
-        under25: { href: "articles/best-gifts-for-men-under-25.html", label: "Best Gifts for Men Under $25" },
-        under50: { href: "articles/best-gifts-for-men-under-50.html", label: "Best Gifts for Men Under $50" },
-        under100: { href: "articles/best-gifts-for-men-under-100.html", label: "Best Gifts for Men Under $100" }
+        under25: "articles/best-gifts-for-men-under-25.html",
+        under50: "articles/best-gifts-for-men-under-50.html",
+        under100: "articles/best-gifts-for-men-under-100.html"
       },
       occasion: {
-        birthday: { href: "articles/best-birthday-gifts-for-dads.html", label: "Best Birthday Gifts for Dads" },
-        christmas: { href: "articles/best-christmas-gifts-for-men.html", label: "Best Christmas Gifts for Men" },
-        fathersday: { href: "articles/best-fathers-day-gifts-for-dads-who-have-everything.html", label: "Best Father’s Day Gifts for Dads Who Have Everything" },
-        lastminute: { href: "articles/best-last-minute-gifts-for-men.html", label: "Best Last-Minute Gifts for Men" }
+        birthday: "articles/best-birthday-gifts-for-dads.html",
+        christmas: "articles/best-christmas-gifts-for-men.html",
+        fathersday: "articles/best-fathers-day-gifts-for-dads-who-have-everything.html",
+        lastminute: "articles/best-last-minute-gifts-for-men.html"
       },
-      fallback: { href: "articles/best-gifts-for-men-under-50.html", label: "Best Gifts for Men Under $50" }
+      extra: [
+        "articles/best-tech-gifts-for-men.html",
+        "articles/best-gifts-for-men-under-100.html"
+      ]
     },
     women: {
       label: "Women",
+      primary: "articles/best-gifts-for-women-under-50.html",
       budget: {
-        under50: { href: "articles/best-gifts-for-women-under-50.html", label: "Best Gifts for Women Under $50" },
-        under100: { href: "articles/best-gifts-for-women-under-100.html", label: "Best Gifts for Women Under $100" }
+        under50: "articles/best-gifts-for-women-under-50.html",
+        under100: "articles/best-gifts-for-women-under-100.html"
       },
       occasion: {
-        birthday: { href: "articles/best-gifts-for-women-under-50.html", label: "Best Gifts for Women Under $50" },
-        christmas: { href: "articles/best-gifts-for-women-under-100.html", label: "Best Gifts for Women Under $100" },
-        lastminute: { href: "articles/best-gifts-for-women-under-50.html", label: "Best Gifts for Women Under $50" }
+        birthday: "articles/best-gifts-for-women-under-50.html",
+        christmas: "articles/best-gifts-for-women-under-100.html",
+        lastminute: "articles/best-gifts-for-women-under-50.html"
       },
-      fallback: { href: "articles/best-gifts-for-women-under-50.html", label: "Best Gifts for Women Under $50" }
+      extra: [
+        "articles/best-gifts-for-women-under-100.html",
+        "articles/best-gifts-for-friends.html"
+      ]
     },
     moms: {
       label: "Moms",
+      primary: "articles/best-birthday-gifts-for-moms.html",
       budget: {
-        under50: { href: "articles/best-birthday-gifts-for-moms.html", label: "Best Birthday Gifts for Moms" },
-        under100: { href: "articles/best-mothers-day-gifts-for-moms.html", label: "Best Mother’s Day Gifts for Moms" }
+        under50: "articles/best-birthday-gifts-for-moms.html",
+        under100: "articles/best-mothers-day-gifts-for-moms.html"
       },
       occasion: {
-        birthday: { href: "articles/best-birthday-gifts-for-moms.html", label: "Best Birthday Gifts for Moms" },
-        mothersday: { href: "articles/best-mothers-day-gifts-for-moms.html", label: "Best Mother’s Day Gifts for Moms" },
-        christmas: { href: "articles/best-birthday-gifts-for-moms.html", label: "Best Birthday Gifts for Moms" },
-        lastminute: { href: "articles/best-mothers-day-gifts-for-moms.html", label: "Best Mother’s Day Gifts for Moms" }
+        birthday: "articles/best-birthday-gifts-for-moms.html",
+        mothersday: "articles/best-mothers-day-gifts-for-moms.html",
+        christmas: "articles/best-birthday-gifts-for-moms.html",
+        lastminute: "articles/best-mothers-day-gifts-for-moms.html"
       },
-      fallback: { href: "articles/best-birthday-gifts-for-moms.html", label: "Best Birthday Gifts for Moms" }
+      extra: [
+        "articles/best-gifts-for-women-under-50.html",
+        "articles/best-gifts-for-women-under-100.html"
+      ]
     },
     dads: {
       label: "Dads",
+      primary: "articles/best-birthday-gifts-for-dads.html",
       budget: {
-        under25: { href: "articles/best-gifts-for-men-under-25.html", label: "Best Gifts for Men Under $25" },
-        under50: { href: "articles/best-birthday-gifts-for-dads.html", label: "Best Birthday Gifts for Dads" },
-        under100: { href: "articles/best-gifts-for-men-under-100.html", label: "Best Gifts for Men Under $100" }
+        under25: "articles/best-gifts-for-men-under-25.html",
+        under50: "articles/best-birthday-gifts-for-dads.html",
+        under100: "articles/best-gifts-for-men-under-100.html"
       },
       occasion: {
-        birthday: { href: "articles/best-birthday-gifts-for-dads.html", label: "Best Birthday Gifts for Dads" },
-        fathersday: { href: "articles/best-fathers-day-gifts-for-dads-who-have-everything.html", label: "Best Father’s Day Gifts for Dads Who Have Everything" },
-        christmas: { href: "articles/best-christmas-gifts-for-men.html", label: "Best Christmas Gifts for Men" },
-        lastminute: { href: "articles/best-last-minute-gifts-for-men.html", label: "Best Last-Minute Gifts for Men" }
+        birthday: "articles/best-birthday-gifts-for-dads.html",
+        fathersday: "articles/best-fathers-day-gifts-for-dads-who-have-everything.html",
+        christmas: "articles/best-christmas-gifts-for-men.html",
+        lastminute: "articles/best-last-minute-gifts-for-men.html"
       },
-      fallback: { href: "articles/best-birthday-gifts-for-dads.html", label: "Best Birthday Gifts for Dads" }
+      extra: [
+        "articles/best-funny-gifts-for-dads.html",
+        "articles/best-gifts-for-men-under-50.html"
+      ]
     },
     husbands: {
       label: "Husbands",
+      primary: "articles/best-birthday-gifts-for-husbands.html",
       budget: {
-        under50: { href: "articles/best-gifts-for-men-under-50.html", label: "Best Gifts for Men Under $50" },
-        under100: { href: "articles/best-gifts-for-men-under-100.html", label: "Best Gifts for Men Under $100" }
+        under50: "articles/best-gifts-for-men-under-50.html",
+        under100: "articles/best-gifts-for-men-under-100.html"
       },
       occasion: {
-        birthday: { href: "articles/best-birthday-gifts-for-husbands.html", label: "Best Birthday Gifts for Husbands" },
-        anniversary: { href: "articles/best-personalized-gifts-for-husbands.html", label: "Best Personalized Gifts for Husbands" },
-        christmas: { href: "articles/best-christmas-gifts-for-men.html", label: "Best Christmas Gifts for Men" },
-        lastminute: { href: "articles/best-last-minute-gifts-for-men.html", label: "Best Last-Minute Gifts for Men" }
+        birthday: "articles/best-birthday-gifts-for-husbands.html",
+        anniversary: "articles/best-personalized-gifts-for-husbands.html",
+        christmas: "articles/best-christmas-gifts-for-men.html",
+        lastminute: "articles/best-last-minute-gifts-for-men.html"
       },
-      fallback: { href: "articles/best-birthday-gifts-for-husbands.html", label: "Best Birthday Gifts for Husbands" }
+      extra: [
+        "articles/best-personalized-gifts-for-husbands.html",
+        "articles/best-tech-gifts-for-men.html"
+      ]
     },
     wives: {
       label: "Wives",
+      primary: "articles/best-gifts-for-wives.html",
       budget: {
-        under50: { href: "articles/best-gifts-for-wives.html", label: "Best Gifts for Wives" },
-        under100: { href: "articles/best-anniversary-gifts-for-wives.html", label: "Best Anniversary Gifts for Wives" }
+        under50: "articles/best-gifts-for-wives.html",
+        under100: "articles/best-anniversary-gifts-for-wives.html"
       },
       occasion: {
-        birthday: { href: "articles/best-gifts-for-wives.html", label: "Best Gifts for Wives" },
-        anniversary: { href: "articles/best-anniversary-gifts-for-wives.html", label: "Best Anniversary Gifts for Wives" },
-        christmas: { href: "articles/best-gifts-for-wives.html", label: "Best Gifts for Wives" },
-        lastminute: { href: "articles/best-gifts-for-wives.html", label: "Best Gifts for Wives" }
+        birthday: "articles/best-gifts-for-wives.html",
+        anniversary: "articles/best-anniversary-gifts-for-wives.html",
+        christmas: "articles/best-gifts-for-wives.html",
+        lastminute: "articles/best-gifts-for-wives.html"
       },
-      fallback: { href: "articles/best-gifts-for-wives.html", label: "Best Gifts for Wives" }
+      extra: [
+        "articles/best-anniversary-gifts-for-wives.html",
+        "articles/best-gifts-for-women-under-100.html"
+      ]
     },
     boyfriends: {
       label: "Boyfriends",
+      primary: "articles/best-anniversary-gifts-for-boyfriends.html",
       budget: {
-        under50: { href: "articles/best-gifts-for-men-under-50.html", label: "Best Gifts for Men Under $50" },
-        under100: { href: "articles/best-gifts-for-men-under-100.html", label: "Best Gifts for Men Under $100" }
+        under50: "articles/best-gifts-for-men-under-50.html",
+        under100: "articles/best-gifts-for-men-under-100.html"
       },
       occasion: {
-        birthday: { href: "articles/best-gifts-for-men-under-50.html", label: "Best Gifts for Men Under $50" },
-        anniversary: { href: "articles/best-anniversary-gifts-for-boyfriends.html", label: "Best Anniversary Gifts for Boyfriends" },
-        christmas: { href: "articles/best-christmas-gifts-for-men.html", label: "Best Christmas Gifts for Men" },
-        lastminute: { href: "articles/best-last-minute-gifts-for-men.html", label: "Best Last-Minute Gifts for Men" }
+        birthday: "articles/best-gifts-for-men-under-50.html",
+        anniversary: "articles/best-anniversary-gifts-for-boyfriends.html",
+        christmas: "articles/best-christmas-gifts-for-men.html",
+        lastminute: "articles/best-last-minute-gifts-for-men.html"
       },
-      fallback: { href: "articles/best-anniversary-gifts-for-boyfriends.html", label: "Best Anniversary Gifts for Boyfriends" }
+      extra: [
+        "articles/best-tech-gifts-for-men.html",
+        "articles/best-gifts-for-men-under-100.html"
+      ]
     },
     girlfriends: {
       label: "Girlfriends",
+      primary: "articles/best-gifts-for-girlfriends.html",
       budget: {
-        under50: { href: "articles/best-gifts-for-girlfriends.html", label: "Best Gifts for Girlfriends" },
-        under100: { href: "articles/best-gifts-for-women-under-100.html", label: "Best Gifts for Women Under $100" }
+        under50: "articles/best-gifts-for-girlfriends.html",
+        under100: "articles/best-gifts-for-women-under-100.html"
       },
       occasion: {
-        birthday: { href: "articles/best-gifts-for-girlfriends.html", label: "Best Gifts for Girlfriends" },
-        anniversary: { href: "articles/best-gifts-for-girlfriends.html", label: "Best Gifts for Girlfriends" },
-        christmas: { href: "articles/best-gifts-for-girlfriends.html", label: "Best Gifts for Girlfriends" },
-        lastminute: { href: "articles/best-gifts-for-girlfriends.html", label: "Best Gifts for Girlfriends" }
+        birthday: "articles/best-gifts-for-girlfriends.html",
+        anniversary: "articles/best-gifts-for-girlfriends.html",
+        christmas: "articles/best-gifts-for-girlfriends.html",
+        lastminute: "articles/best-gifts-for-girlfriends.html"
       },
-      fallback: { href: "articles/best-gifts-for-girlfriends.html", label: "Best Gifts for Girlfriends" }
+      extra: [
+        "articles/best-gifts-for-wives.html",
+        "articles/best-gifts-for-women-under-50.html"
+      ]
     },
     friends: {
       label: "Friends",
+      primary: "articles/best-gifts-for-friends.html",
       budget: {
-        under25: { href: "articles/best-gifts-for-friends.html", label: "Best Gifts for Friends" },
-        under50: { href: "articles/best-gifts-for-friends.html", label: "Best Gifts for Friends" },
-        under100: { href: "articles/best-gifts-for-friends.html", label: "Best Gifts for Friends" }
+        under25: "articles/best-gifts-for-friends.html",
+        under50: "articles/best-gifts-for-friends.html",
+        under100: "articles/best-gifts-for-friends.html"
       },
       occasion: {
-        birthday: { href: "articles/best-gifts-for-friends.html", label: "Best Gifts for Friends" },
-        christmas: { href: "articles/best-gifts-for-friends.html", label: "Best Gifts for Friends" },
-        lastminute: { href: "articles/best-gifts-for-friends.html", label: "Best Gifts for Friends" }
+        birthday: "articles/best-gifts-for-friends.html",
+        christmas: "articles/best-gifts-for-friends.html",
+        lastminute: "articles/best-gifts-for-friends.html"
       },
-      fallback: { href: "articles/best-gifts-for-friends.html", label: "Best Gifts for Friends" }
+      extra: [
+        "articles/best-gifts-for-coworkers.html",
+        "articles/best-gifts-for-women-under-50.html"
+      ]
     },
     coworkers: {
       label: "Coworkers",
+      primary: "articles/best-gifts-for-coworkers.html",
       budget: {
-        under25: { href: "articles/best-gifts-for-coworkers.html", label: "Best Gifts for Coworkers" },
-        under50: { href: "articles/best-gifts-for-coworkers.html", label: "Best Gifts for Coworkers" },
-        under100: { href: "articles/best-gifts-for-coworkers.html", label: "Best Gifts for Coworkers" }
+        under25: "articles/best-gifts-for-coworkers.html",
+        under50: "articles/best-gifts-for-coworkers.html",
+        under100: "articles/best-gifts-for-coworkers.html"
       },
       occasion: {
-        birthday: { href: "articles/best-gifts-for-coworkers.html", label: "Best Gifts for Coworkers" },
-        christmas: { href: "articles/best-gifts-for-coworkers.html", label: "Best Gifts for Coworkers" },
-        lastminute: { href: "articles/best-gifts-for-coworkers.html", label: "Best Gifts for Coworkers" }
+        birthday: "articles/best-gifts-for-coworkers.html",
+        christmas: "articles/best-gifts-for-coworkers.html",
+        lastminute: "articles/best-gifts-for-coworkers.html"
       },
-      fallback: { href: "articles/best-gifts-for-coworkers.html", label: "Best Gifts for Coworkers" }
+      extra: [
+        "articles/best-gifts-for-friends.html",
+        "articles/best-last-minute-gifts-for-men.html"
+      ]
     }
+  },
+  labels: {
+    "articles/best-gifts-for-men-under-25.html": "Best Gifts for Men Under $25",
+    "articles/best-gifts-for-men-under-50.html": "Best Gifts for Men Under $50",
+    "articles/best-gifts-for-men-under-100.html": "Best Gifts for Men Under $100",
+    "articles/best-birthday-gifts-for-dads.html": "Best Birthday Gifts for Dads",
+    "articles/best-fathers-day-gifts-for-dads-who-have-everything.html": "Best Father’s Day Gifts for Dads Who Have Everything",
+    "articles/best-last-minute-gifts-for-men.html": "Best Last-Minute Gifts for Men",
+    "articles/best-tech-gifts-for-men.html": "Best Tech Gifts for Men",
+    "articles/best-funny-gifts-for-dads.html": "Best Funny Gifts for Dads",
+    "articles/best-birthday-gifts-for-husbands.html": "Best Birthday Gifts for Husbands",
+    "articles/best-personalized-gifts-for-husbands.html": "Best Personalized Gifts for Husbands",
+    "articles/best-christmas-gifts-for-men.html": "Best Christmas Gifts for Men",
+    "articles/best-gifts-for-women-under-50.html": "Best Gifts for Women Under $50",
+    "articles/best-gifts-for-women-under-100.html": "Best Gifts for Women Under $100",
+    "articles/best-birthday-gifts-for-moms.html": "Best Birthday Gifts for Moms",
+    "articles/best-mothers-day-gifts-for-moms.html": "Best Mother’s Day Gifts for Moms",
+    "articles/best-gifts-for-wives.html": "Best Gifts for Wives",
+    "articles/best-anniversary-gifts-for-wives.html": "Best Anniversary Gifts for Wives",
+    "articles/best-anniversary-gifts-for-boyfriends.html": "Best Anniversary Gifts for Boyfriends",
+    "articles/best-gifts-for-girlfriends.html": "Best Gifts for Girlfriends",
+    "articles/best-gifts-for-friends.html": "Best Gifts for Friends",
+    "articles/best-gifts-for-coworkers.html": "Best Gifts for Coworkers"
   },
   budgetOptions: [
     { id: "under25", label: "Under $25" },
@@ -157,11 +220,7 @@ const giftFinderData = {
   ]
 };
 
-const state = {
-  person: null,
-  budget: null,
-  occasion: null
-};
+const state = { person: null, budget: null, occasion: null };
 
 function renderOptions(container, items, selected, onClick) {
   container.innerHTML = "";
@@ -175,13 +234,29 @@ function renderOptions(container, items, selected, onClick) {
   });
 }
 
-function getResult() {
-  if (!state.person) return null;
-  const personData = giftFinderData.person[state.person];
-  if (!personData) return null;
-  if (state.occasion && personData.occasion[state.occasion]) return personData.occasion[state.occasion];
-  if (state.budget && personData.budget[state.budget]) return personData.budget[state.budget];
-  return personData.fallback;
+function pushUnique(list, href) {
+  if (href && !list.includes(href)) list.push(href);
+}
+
+function buildResults() {
+  if (!state.person) return [];
+  const person = giftFinderData.people[state.person];
+  if (!person) return [];
+
+  const results = [];
+  const occasionMatch = state.occasion ? person.occasion[state.occasion] : null;
+  const budgetMatch = state.budget ? person.budget[state.budget] : null;
+
+  if (occasionMatch) pushUnique(results, occasionMatch);
+  if (budgetMatch && budgetMatch !== occasionMatch) pushUnique(results, budgetMatch);
+  pushUnique(results, person.primary);
+  person.extra.forEach((href) => pushUnique(results, href));
+
+  return results.slice(0, 3).map((href, index) => ({
+    href,
+    label: giftFinderData.labels[href] || href,
+    rank: index === 0 ? "Best match" : index === 1 ? "Strong backup" : "Another good option"
+  }));
 }
 
 function updateFinder() {
@@ -193,41 +268,55 @@ function updateFinder() {
 
   renderOptions(
     personWrap,
-    Object.entries(giftFinderData.person).map(([id, data]) => ({ id, label: data.label })),
+    Object.entries(giftFinderData.people).map(([id, data]) => ({ id, label: data.label })),
     state.person,
     (id) => {
       state.person = id;
       updateFinder();
     }
   );
-
   renderOptions(budgetWrap, giftFinderData.budgetOptions, state.budget, (id) => {
     state.budget = id;
     updateFinder();
   });
-
   renderOptions(occasionWrap, giftFinderData.occasionOptions, state.occasion, (id) => {
     state.occasion = id;
     updateFinder();
   });
 
-  const personLabel = state.person ? giftFinderData.person[state.person].label : "someone";
-  const budgetLabel = state.budget ? giftFinderData.budgetOptions.find((o) => o.id === state.budget)?.label : "any budget";
-  const occasionLabel = state.occasion ? giftFinderData.occasionOptions.find((o) => o.id === state.occasion)?.label : "any occasion";
-
-  summary.textContent = `Step by step: shopping for ${personLabel}, around ${budgetLabel}, for ${occasionLabel}.`;
-
-  const result = getResult();
-  if (!result) {
+  if (!state.person) {
+    summary.textContent = "Step by step: choose a person to get started.";
     resultBox.innerHTML = '<p><strong>Your best match will appear here.</strong> Start with Step 1, then optionally narrow by budget and occasion.</p>';
     return;
   }
 
+  const personLabel = giftFinderData.people[state.person].label;
+  const budgetLabel = state.budget ? giftFinderData.budgetOptions.find((o) => o.id === state.budget)?.label : "any budget";
+  const occasionLabel = state.occasion ? giftFinderData.occasionOptions.find((o) => o.id === state.occasion)?.label : "any occasion";
+  summary.textContent = `Step by step: shopping for ${personLabel}, around ${budgetLabel}, for ${occasionLabel}.`;
+
+  const results = buildResults();
+  if (!results.length) {
+    resultBox.innerHTML = '<p><strong>No match yet.</strong> Start with Step 1 and we will guide you from there.</p>';
+    return;
+  }
+
   resultBox.innerHTML = `
-    <p><strong>Best matching guide:</strong></p>
-    <h3><a class="card-link" href="${result.href}">${result.label}</a></h3>
-    <p>Use this guide first, then explore related links on that page for more options.</p>
-    <a class="button button-primary" href="${result.href}">Open this guide</a>
+    <p><strong>Recommended guides:</strong></p>
+    <div class="link-cloud">
+      ${results
+        .map(
+          (result) => `
+            <div class="finder-match-card">
+              <p class="eyebrow">${result.rank}</p>
+              <h3><a class="card-link" href="${result.href}">${result.label}</a></h3>
+              <a class="button button-primary" href="${result.href}">Open guide</a>
+            </div>
+          `
+        )
+        .join("")}
+    </div>
+    <p>Tip: if the first result is close but not perfect, try one of the backup guides too.</p>
   `;
 }
 
